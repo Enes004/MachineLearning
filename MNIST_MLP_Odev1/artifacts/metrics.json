@@ -1,0 +1,99 @@
+{
+  "dataset_split": {
+    "train": 55000,
+    "validation": 5000,
+    "test": 10000
+  },
+  "selected_hidden_dims": [
+    512,
+    256,
+    128
+  ],
+  "selected_epoch": 7,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epochs": 8,
+  "seed": 42,
+  "device": "cuda",
+  "training_seconds_all_configurations": 121.12732572100049,
+  "selected_training_seconds": 43.461408121000204,
+  "train_loss_at_selected_epoch": 0.0260860286609693,
+  "train_accuracy_at_selected_epoch": 0.9913818181818181,
+  "validation_loss_at_selected_epoch": 0.08017667852975428,
+  "validation_accuracy_at_selected_epoch": 0.9786,
+  "test_loss": 0.07153600828701165,
+  "test_accuracy": 0.9798,
+  "history": {
+    "train_loss": [
+      0.3246366566397927,
+      0.11068128056526184,
+      0.07313338097008792,
+      0.052225697511976414,
+      0.03967114714384079,
+      0.03330376439582218,
+      0.0260860286609693,
+      0.019454437478089875
+    ],
+    "train_accuracy": [
+      0.9022909090909091,
+      0.9665636363636364,
+      0.9772727272727273,
+      0.9837636363636364,
+      0.9874909090909091,
+      0.988909090909091,
+      0.9913818181818181,
+      0.9933818181818181
+    ],
+    "validation_loss": [
+      0.1593134383201599,
+      0.1098350913286209,
+      0.09248879523277283,
+      0.0883234531968832,
+      0.09015977702140808,
+      0.08814840679299087,
+      0.08017667852975428,
+      0.09233997929181205
+    ],
+    "validation_accuracy": [
+      0.9534,
+      0.9666,
+      0.97,
+      0.9736,
+      0.9714,
+      0.9746,
+      0.9786,
+      0.9762
+    ]
+  },
+  "experiments": [
+    {
+      "hidden_dims": [
+        128,
+        64
+      ],
+      "best_epoch": 7,
+      "best_validation_accuracy": 0.9708,
+      "training_seconds": 40.999971958999595
+    },
+    {
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "best_epoch": 7,
+      "best_validation_accuracy": 0.976,
+      "training_seconds": 36.66594564100069
+    },
+    {
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "best_epoch": 7,
+      "best_validation_accuracy": 0.9786,
+      "training_seconds": 43.461408121000204
+    }
+  ]
+}
