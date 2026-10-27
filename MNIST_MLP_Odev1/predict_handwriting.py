@@ -9,7 +9,7 @@ import torch
 from PIL import Image
 from torchvision.transforms.functional import pil_to_tensor
 
-from handwriting_utils import load_handwriting_image
+from handwriting_utils import load_digit_image
 from mlp_model import MNISTMLP
 
 
@@ -56,7 +56,7 @@ def main() -> None:
         writer = csv.writer(csv_file)
         writer.writerow(("image", "expected_digit", "predicted_digit", "confidence", "correct"))
         for path in image_paths:
-            image = load_handwriting_image(path)
+            image = load_digit_image(path)
             tensor = pil_to_tensor(image).float().div_(255.0).unsqueeze(0).to(device)
             with torch.inference_mode():
                 probabilities = model(tensor).softmax(dim=1)[0]

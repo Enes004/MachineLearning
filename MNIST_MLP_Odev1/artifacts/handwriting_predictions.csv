@@ -1,0 +1,12 @@
+image,expected_digit,predicted_digit,confidence,correct
+digit_01_label_2.png,2,2,0.999458,True
+digit_02_label_4.png,4,4,0.998192,True
+digit_03_label_1.png,1,7,0.989266,False
+digit_04_label_2.png,2,2,0.999998,True
+digit_05_label_0.png,0,0,0.982431,True
+digit_06_label_2.png,2,2,1.000000,True
+digit_07_label_0.png,0,0,0.991124,True
+digit_08_label_5.png,5,5,0.999288,True
+digit_09_label_0.png,0,0,0.996825,True
+digit_10_label_2.png,2,2,1.000000,True
+digit_11_label_2.png,2,2,0.999977,True

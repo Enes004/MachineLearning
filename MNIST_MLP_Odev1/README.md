@@ -46,6 +46,16 @@ python collect_handwriting.py
 
 Okul numaranizi uygulama icinde girin ve her rakami ayri tuvalde **kendi el yazinizla** cizip kaydedin. Uygulama her goruntuyu gri tonlu 28x28 MNIST benzeri (siyah zemin, beyaz rakam) PNG olarak `data/handwriting/` altina kaydeder. Bos tuval kaydedilmez. Okul numaranizi terminale, kaynak koda veya rapora yazmaniz gerekmez.
 
+### Kagida yazilip fotograflanan numara
+
+Bu depodaki el yazisi rakamlar kagida kalemle yazilmis numaranin fotografindan (`data/handwriting_photo/okul_numarasi.png`) uretilmistir:
+
+```bash
+python prepare_photo_digits.py data/handwriting_photo/okul_numarasi.png --labels <okul_numarasi>
+```
+
+Betik isik farkini duzeltir, rakamlari bagli bilesen analiziyle ayirir ve her birini MNIST formatina (siyah zemin, beyaz rakam, 20x20 kutuya olcekleme, kutle merkezine gore 28x28 ortalama) cevirerek `data/handwriting/digit_XX_label_Y.png` olarak kaydeder. `--labels` fotograftaki rakamlari soldan saga verir ve yalnizca dosya adlarindaki dogru etiket icin kullanilir. Islenmis rakamlarin onizlemesi `artifacts/handwriting_digits.png` dosyasina yazilir.
+
 Model egitildikten ve en az bir rakam kaydedildikten sonra:
 
 ```bash
@@ -58,7 +68,7 @@ Tahminler, guven skorlar ve dosya adinda bulunan dogru etiketle karsilastirma `a
 
 ## Teslim raporu
 
-`RESULTS.md` egitimden sonra gercek olcumlerle otomatik olusur; egitimden once bu depo sonuc uydurulmus degerler icermez. `REPORT.md` sablonuna el yazisi tahminlerinizi ve kendi yorumunuzu ekleyin. Teslimden once okul numaranizla olusturdugunuz kendi goruntulerini, `RESULTS.md` dosyasini ve `artifacts/` altindaki olcum/grafikleri depoya ekleyin.
+`RESULTS.md` egitimden sonra gercek olcumlerle otomatik olusur. Deney sonuclari, el yazisi tahminleri ve genel degerlendirme `REPORT.md` dosyasindadir.
 
 ## Testler
 
