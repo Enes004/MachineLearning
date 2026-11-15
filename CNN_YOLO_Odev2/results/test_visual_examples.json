@@ -1,0 +1,98 @@
+[
+  {
+    "path": "data/voc_yolo/images/test/voc2007_008134.jpg",
+    "gt": 18,
+    "pred": 18,
+    "tp": 18,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "figure": "report/figures/test_pred_01_f1_1.000.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_005717.jpg",
+    "gt": 11,
+    "pred": 11,
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "figure": "report/figures/test_pred_02_f1_1.000.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_005205.jpg",
+    "gt": 10,
+    "pred": 10,
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "figure": "report/figures/test_pred_03_f1_1.000.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_008579.jpg",
+    "gt": 10,
+    "pred": 10,
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "figure": "report/figures/test_pred_04_f1_1.000.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_001811.jpg",
+    "gt": 8,
+    "pred": 4,
+    "tp": 1,
+    "fp": 3,
+    "fn": 7,
+    "precision": 0.25,
+    "recall": 0.125,
+    "f1": 0.16666666666666666,
+    "figure": "report/figures/test_pred_05_f1_0.167.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_003652.jpg",
+    "gt": 6,
+    "pred": 6,
+    "tp": 1,
+    "fp": 5,
+    "fn": 5,
+    "precision": 0.166667,
+    "recall": 0.166667,
+    "f1": 0.166667,
+    "figure": "report/figures/test_pred_06_f1_0.167.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_000055.jpg",
+    "gt": 4,
+    "pred": 7,
+    "tp": 1,
+    "fp": 6,
+    "fn": 3,
+    "precision": 0.142857,
+    "recall": 0.25,
+    "f1": 0.18181806611566043,
+    "figure": "report/figures/test_pred_07_f1_0.182.jpg"
+  },
+  {
+    "path": "data/voc_yolo/images/test/voc2007_004881.jpg",
+    "gt": 4,
+    "pred": 7,
+    "tp": 1,
+    "fp": 6,
+    "fn": 3,
+    "precision": 0.142857,
+    "recall": 0.25,
+    "f1": 0.18181806611566043,
+    "figure": "report/figures/test_pred_08_f1_0.182.jpg"
+  }
+]

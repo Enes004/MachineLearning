@@ -1,0 +1,99 @@
+{
+  "seed": 42,
+  "train_ratio": 0.9,
+  "source": {
+    "train_pool": "VOC2007 trainval + VOC2012 trainval",
+    "test": "VOC2007 test"
+  },
+  "duplicates_removed": 3,
+  "trainval_pool_unique": 16548,
+  "splits": {
+    "train": {
+      "images": 14893,
+      "objects": 42577,
+      "objects_per_image": 2.8589,
+      "empty_images": 0,
+      "difficult_objects": 6435,
+      "class_counts": {
+        "aeroplane": 1163,
+        "bicycle": 1061,
+        "bird": 1647,
+        "boat": 1212,
+        "bottle": 1894,
+        "bus": 813,
+        "car": 3616,
+        "cat": 1453,
+        "chair": 3942,
+        "cow": 961,
+        "diningtable": 975,
+        "dog": 1870,
+        "horse": 1060,
+        "motorbike": 1010,
+        "person": 14042,
+        "pottedplant": 1606,
+        "sheep": 1223,
+        "sofa": 1089,
+        "train": 885,
+        "tvmonitor": 1055
+      }
+    },
+    "val": {
+      "images": 1655,
+      "objects": 4639,
+      "objects_per_image": 2.803,
+      "empty_images": 0,
+      "difficult_objects": 730,
+      "class_counts": {
+        "aeroplane": 122,
+        "bicycle": 145,
+        "bird": 173,
+        "boat": 185,
+        "bottle": 222,
+        "bus": 96,
+        "car": 390,
+        "cat": 163,
+        "chair": 396,
+        "cow": 97,
+        "diningtable": 82,
+        "dog": 209,
+        "horse": 96,
+        "motorbike": 131,
+        "person": 1531,
+        "pottedplant": 118,
+        "sheep": 124,
+        "sofa": 122,
+        "train": 99,
+        "tvmonitor": 138
+      }
+    },
+    "test": {
+      "images": 4952,
+      "objects": 14976,
+      "objects_per_image": 3.0242,
+      "empty_images": 0,
+      "difficult_objects": 2944,
+      "class_counts": {
+        "aeroplane": 311,
+        "bicycle": 389,
+        "bird": 576,
+        "boat": 393,
+        "bottle": 657,
+        "bus": 254,
+        "car": 1541,
+        "cat": 370,
+        "chair": 1374,
+        "cow": 329,
+        "diningtable": 299,
+        "dog": 530,
+        "horse": 395,
+        "motorbike": 369,
+        "person": 5227,
+        "pottedplant": 592,
+        "sheep": 311,
+        "sofa": 396,
+        "train": 302,
+        "tvmonitor": 361
+      }
+    }
+  }
+}

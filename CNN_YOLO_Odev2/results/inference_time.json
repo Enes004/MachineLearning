@@ -1,0 +1,86 @@
+{
+  "weights": "weights/best.pt",
+  "imgsz": 640,
+  "confidence_threshold": 0.25,
+  "batch_size": 1,
+  "sample": "first 200 images of the VOC2007 test split list",
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "timestamp": "2026-11-15 22:07:33",
+  "results": {
+    "gpu": {
+      "device": "0",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "images": 200,
+      "warmup_images": 10,
+      "preprocess": {
+        "mean_ms": 0.749,
+        "median_ms": 0.702,
+        "std_ms": 0.144,
+        "min_ms": 0.453,
+        "max_ms": 1.303
+      },
+      "inference": {
+        "mean_ms": 5.89,
+        "median_ms": 4.334,
+        "std_ms": 7.316,
+        "min_ms": 3.873,
+        "max_ms": 42.481
+      },
+      "postprocess": {
+        "mean_ms": 0.599,
+        "median_ms": 0.578,
+        "std_ms": 0.092,
+        "min_ms": 0.247,
+        "max_ms": 1.061
+      },
+      "end_to_end": {
+        "mean_ms": 8.632,
+        "median_ms": 7.046,
+        "std_ms": 7.338,
+        "min_ms": 5.922,
+        "max_ms": 45.574
+      },
+      "fps_from_mean_end_to_end": 115.842,
+      "fps_from_wall_clock": 115.809,
+      "wall_clock_seconds": 1.727
+    },
+    "cpu": {
+      "device": "cpu",
+      "device_name": "x86_64",
+      "images": 200,
+      "warmup_images": 10,
+      "preprocess": {
+        "mean_ms": 0.961,
+        "median_ms": 0.925,
+        "std_ms": 0.148,
+        "min_ms": 0.588,
+        "max_ms": 1.755
+      },
+      "inference": {
+        "mean_ms": 32.973,
+        "median_ms": 32.824,
+        "std_ms": 3.26,
+        "min_ms": 26.352,
+        "max_ms": 55.857
+      },
+      "postprocess": {
+        "mean_ms": 0.487,
+        "median_ms": 0.471,
+        "std_ms": 0.08,
+        "min_ms": 0.288,
+        "max_ms": 0.923
+      },
+      "end_to_end": {
+        "mean_ms": 35.998,
+        "median_ms": 35.769,
+        "std_ms": 3.388,
+        "min_ms": 29.228,
+        "max_ms": 60.395
+      },
+      "fps_from_mean_end_to_end": 27.779,
+      "fps_from_wall_clock": 27.776,
+      "wall_clock_seconds": 7.2
+    }
+  }
+}

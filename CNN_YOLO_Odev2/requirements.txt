@@ -1,0 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+ultralytics==8.4.214
+gradio==6.32.0
+scikit-learn==1.7.2
+pandas==2.3.3
+matplotlib==3.10.9
+pillow-heif==1.8.1
+python-docx==1.2.0
+numpy==2.2.6
+opencv-python==5.0.0.93
+PyYAML==6.0.3
+Pillow==12.3.0
+playwright==1.65.2

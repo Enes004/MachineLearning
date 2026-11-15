@@ -1,0 +1,36 @@
+# Training configuration for YOLO nano on Pascal VOC 2007+2012 (seed=42).
+# All hyperparameters live here; train.py does not rely on Ultralytics "auto" defaults
+# for the optimizer or initial learning rate (Eğitim hiperparametreleri tek dosyada).
+
+model: yolo26n.pt          # Latest nano model in installed Ultralytics 8.4.214 (kurulu sürümdeki en güncel nano)
+data: configs/voc_split.yaml
+epochs: 48                 # Measured ~2.4 min/epoch -> ~115 min total, under the 2 h budget
+imgsz: 640
+batch: 16                  # Fits 6 GB VRAM at 640x640
+device: 0
+workers: 8
+
+optimizer: AdamW           # Explicit choice: stable fine-tuning (açık seçim: stabil fine-tune)
+lr0: 0.001                 # Initial learning rate (başlangıç öğrenme oranı)
+lrf: 0.01                  # Final LR = lr0 * lrf (son öğrenme oranı çarpanı)
+momentum: 0.9              # AdamW beta1 (AdamW beta1)
+weight_decay: 0.0005
+warmup_epochs: 1.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.0
+cos_lr: true               # Cosine LR schedule (kosinüs öğrenme oranı çizelgesi)
+
+close_mosaic: 10           # Disable mosaic for the last epochs (son epoch'larda mozaik kapat)
+patience: 30               # Early stopping patience (erken durdurma sabrı)
+seed: 42
+deterministic: true
+amp: true
+cache: false
+val: true
+plots: true
+save: true
+save_period: -1
+pretrained: true
+project: runs/detect
+name: voc_yolo
+exist_ok: false

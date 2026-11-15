@@ -1,0 +1,6 @@
+filename,ground_truth,notes
+foto1.jpg,"person:2;chair:6;sofa:2;diningtable:3","kütüphane, iç mekân, selfie; kalabalık sahne, chair/table sayıları yaklaşık; ikinci kişi arka planda küçük (kırmızı tişörtlü)"
+foto2.jpg,"person:1;cat:1","akşamüstü, park; kişi ve kedi iç içe (örtüşme); arka planda çok uzakta 2 küçük insan var (sayılmadı)"
+foto3.jpg,"car:9;person:1","gece otopark, cam arkasından çekilmiş, bulanık, yansımalı; araçlar iç içe, sayı yaklaşık; soldaki kişi hareketten bulanık"
+foto4.jpg,"chair:2;diningtable:1","gece, bahçe, karanlık; sağ üstteki ikinci sandalye kısmi; arka planda çok uzakta küçük araba ve insan var (sayılmadı)"
+foto5.jpg,"","cami kapısı, iç mekân; VOC nesnesi yok (negatif örnek: model hiçbir şey bulmamalı); tavanda kandil var (VOC'de yok)"

@@ -1,0 +1,13 @@
+filename,class,predicted,actual,correct,missed,false_positive,mean_confidence
+foto1.jpg,chair,2,6,2,4,0,0.7744
+foto1.jpg,diningtable,0,3,0,3,0,
+foto1.jpg,person,1,2,1,1,0,0.9392
+foto1.jpg,sofa,0,2,0,2,0,
+foto1.jpg,tvmonitor,1,0,0,0,1,0.4972
+foto2.jpg,cat,1,1,1,0,0,0.844
+foto2.jpg,person,1,1,1,0,0,0.8328
+foto3.jpg,car,3,9,3,6,0,0.6228
+foto3.jpg,person,0,1,0,1,0,
+foto4.jpg,chair,1,2,1,1,0,0.9133
+foto4.jpg,diningtable,1,1,1,0,0,0.8496
+foto5.jpg,pottedplant,1,0,0,0,1,0.5697

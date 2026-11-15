@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Data and large intermediates
+data/
+runs/
+*.zip
+*.tar
+*.tar.gz
+
+# Model weights: keep final best weights
+*.pt
+!weights/best.pt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+!results/train.log
+nohup.out

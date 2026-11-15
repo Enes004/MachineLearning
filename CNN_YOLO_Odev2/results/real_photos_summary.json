@@ -1,0 +1,124 @@
+{
+  "confidence_threshold": 0.25,
+  "imgsz": 640,
+  "photos": [
+    {
+      "filename": "foto1.jpg",
+      "figure": "report/figures/real_photo_foto1.jpg",
+      "notes": "kütüphane, iç mekân, selfie; kalabalık sahne, chair/table sayıları yaklaşık; ikinci kişi arka planda küçük (kırmızı tişörtlü)",
+      "ground_truth": {
+        "person": 2,
+        "chair": 6,
+        "sofa": 2,
+        "diningtable": 3
+      },
+      "predicted": {
+        "person": 1,
+        "chair": 2,
+        "tvmonitor": 1
+      },
+      "correct": 3,
+      "missed": 10,
+      "false_positive": 1,
+      "count_precision": 0.75,
+      "count_recall": 0.2308,
+      "count_f1": 0.3529,
+      "inference_ms": 2062.64,
+      "mean_confidence": {
+        "person": 0.9392,
+        "chair": 0.7744,
+        "tvmonitor": 0.4972
+      }
+    },
+    {
+      "filename": "foto2.jpg",
+      "figure": "report/figures/real_photo_foto2.jpg",
+      "notes": "akşamüstü, park; kişi ve kedi iç içe (örtüşme); arka planda çok uzakta 2 küçük insan var (sayılmadı)",
+      "ground_truth": {
+        "person": 1,
+        "cat": 1
+      },
+      "predicted": {
+        "cat": 1,
+        "person": 1
+      },
+      "correct": 2,
+      "missed": 0,
+      "false_positive": 0,
+      "count_precision": 1.0,
+      "count_recall": 1.0,
+      "count_f1": 1.0,
+      "inference_ms": 17.63,
+      "mean_confidence": {
+        "cat": 0.844,
+        "person": 0.8328
+      }
+    },
+    {
+      "filename": "foto3.jpg",
+      "figure": "report/figures/real_photo_foto3.jpg",
+      "notes": "gece otopark, cam arkasından çekilmiş, bulanık, yansımalı; araçlar iç içe, sayı yaklaşık; soldaki kişi hareketten bulanık",
+      "ground_truth": {
+        "car": 9,
+        "person": 1
+      },
+      "predicted": {
+        "car": 3
+      },
+      "correct": 3,
+      "missed": 7,
+      "false_positive": 0,
+      "count_precision": 1.0,
+      "count_recall": 0.3,
+      "count_f1": 0.4615,
+      "inference_ms": 16.51,
+      "mean_confidence": {
+        "car": 0.6228
+      }
+    },
+    {
+      "filename": "foto4.jpg",
+      "figure": "report/figures/real_photo_foto4.jpg",
+      "notes": "gece, bahçe, karanlık; sağ üstteki ikinci sandalye kısmi; arka planda çok uzakta küçük araba ve insan var (sayılmadı)",
+      "ground_truth": {
+        "chair": 2,
+        "diningtable": 1
+      },
+      "predicted": {
+        "chair": 1,
+        "diningtable": 1
+      },
+      "correct": 2,
+      "missed": 1,
+      "false_positive": 0,
+      "count_precision": 1.0,
+      "count_recall": 0.6667,
+      "count_f1": 0.8,
+      "inference_ms": 16.77,
+      "mean_confidence": {
+        "chair": 0.9133,
+        "diningtable": 0.8496
+      }
+    },
+    {
+      "filename": "foto5.jpg",
+      "figure": "report/figures/real_photo_foto5.jpg",
+      "notes": "cami kapısı, iç mekân; VOC nesnesi yok (negatif örnek: model hiçbir şey bulmamalı); tavanda kandil var (VOC'de yok)",
+      "ground_truth": {},
+      "predicted": {
+        "pottedplant": 1
+      },
+      "correct": 0,
+      "missed": 0,
+      "false_positive": 1,
+      "count_precision": 0.0,
+      "count_recall": null,
+      "count_f1": null,
+      "inference_ms": 19.18,
+      "mean_confidence": {
+        "pottedplant": 0.5697
+      }
+    }
+  ],
+  "missing_photos": []
+}
